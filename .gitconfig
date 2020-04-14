@@ -1,0 +1,32 @@
+[user]
+	name = Hfreitas
+	email = hfreitas86@gmail.com
+[core]
+	editor = code --wait
+[alias]
+#Push do branch atual para o repositório remoto 
+p = "!git push origin $(git rev-parse --abbrev-ref HEAD)"
+#Pull das últimas atualizações do branch atual e rebase dos commits locais
+pu = "!git pull --rebase origin $(git rev-parse --abbrev-ref HEAD)"
+#git checkout
+co = "!git checkout"
+#Adiciona a staged area apenas as partes alteradas do(s) arquivo(s) (git add -p)
+ap = "!git add -p"
+#git commit -m
+cm = "!git commit -m"
+#Corrige última mensagem de commit e modifica a mensagem
+cam ="!git commit --amend -m"
+#git clone
+c = "!git clone"
+#Sincroniza com o repositório remoto
+f = !git fetch --all && git rebase origin/master
+#Cria uma nova branch
+nb = "!git checkout -b"
+#git status
+st = "!git status"
+#Lista o repositório remoto atual
+r = "!git remote -v"
+#Deletar branch (git branch -D "nome_da_branch")
+bdel = "!git branch -D"
+#git branch
+b = "!git branch --color[=auto]"	

@@ -1,0 +1,27 @@
+#System Aliases
+
+alias install="sudo apt-fast install"
+alias lt="ls -alF"
+alias clr="clear"
+alias tlp="sudo tlp start"
+alias logo="neofetch"
+alias update="sudo apt update"
+alias upgrade="sudo apt upgrade"
+alias nzsh="sudo nano ~/.zshrc"
+
+#Files associations
+
+alias -s txt=code
+alias -s md=code
+alias -s html=code
+alias -s js=code
+alias -s py=code
+
+#NPM Aliases
+alias nr='npm run'
+alias ni='npm install'
+alias niD='npm install -D'
+alias niS='npm instal --save'
+
+#Dotfiles alias
+alias config='/usr/bin/git --git-dir=/home/hfreitas/.cfg/ --work-tree=/home/hfreitas'
