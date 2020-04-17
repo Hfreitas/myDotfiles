@@ -125,15 +125,15 @@ source $ZSH/oh-my-zsh.sh
 
 #Aliases
 
-source .aliases
+source /home/hfreitas/.aliases
 
 #Functions
 
-source .functions
+source /home/hfreitas/.functions
 
 #Pyenv and NVM paths
 
-source .exports
+source /home/hfreitas/.exports
 
 
 

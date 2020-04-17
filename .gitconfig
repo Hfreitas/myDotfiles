@@ -4,6 +4,8 @@
 [core]
 	editor = code --wait
 [alias]
+#git remote add
+ra = "!git remote add"
 #Push do branch atual para o repositório remoto 
 p = "!git push origin $(git rev-parse --abbrev-ref HEAD)"
 #Pull das últimas atualizações do branch atual e rebase dos commits locais
