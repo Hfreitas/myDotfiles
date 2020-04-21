@@ -131,7 +131,7 @@ source /home/hfreitas/.aliases
 
 source /home/hfreitas/.functions
 
-#Pyenv and NVM paths
+#Development Tools paths
 
 source /home/hfreitas/.exports
 
@@ -144,3 +144,5 @@ eval `dircolors /home/hfreitas/.dir_colors/dircolors`
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte-2.91.sh
 fi
+
+autoload bashcompinit && bashcompinit
