@@ -139,3 +139,8 @@ source /home/hfreitas/.exports
 
 # Color scheme of Dracula Theme
 eval `dircolors /home/hfreitas/.dir_colors/dircolors`
+
+
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte-2.91.sh
+fi

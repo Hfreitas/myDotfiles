@@ -26,3 +26,15 @@ alias airbnb='exec 3<&1;bash <&3 <(curl https://raw.githubusercontent.com/paulol
 
 #Dotfiles alias
 alias config='/usr/bin/git --git-dir=/home/hfreitas/.cfg/ --work-tree=/home/hfreitas'
+
+#mySQL aliases
+
+alias mystart='systemctl start mysql'
+alias mystop='systemctl stop mysql'
+alias myacess='mysql - u root -p'
+
+#Docker aliases
+
+alias dstart='sudo systemctl start docker'
+alias dstop='sudo systemctl stop docker'
+
