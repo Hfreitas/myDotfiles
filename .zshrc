@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -7,7 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
->>>>>>> Nova instalação Linux, alterei tema para PowerLevel10K e ainda vou particionar o .zshrc
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -18,36 +15,7 @@ export ZSH="/home/hfreitas/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-<<<<<<< HEAD
-ZSH_THEME="spaceship"
-
-#SPACESHIP CONFIG
-SPACESHIP_PROMPT_ORDER=(
-  user          # Username section
-  dir           # Current directory section
-  host          # Hostname section
-  git           # Git section (git_branch + git_status)
-  node          # Node.js section
-  package       # Package version
-  venv          # virtualenv section
-  pyenv         # Pyenv section
-  exec_time     # Execution time
-  line_sep      # Line break
-  jobs          # Background jobs indicator
-  exit_code     # Exit code section
-  char          # Prompt character
-)
-
-SPACESHIP_PROMPT_ADD_NEWLINE="true"
-SPACESHIP_CHAR_SYMBOL="\uf0e7"
-SPACESHIP_CHAR_SUFFIX=(" ")
-SPACESHIP_CHAR_COLOR_SUCCESS="yellow"
-SPACESHIP_PROMPT_DEFAULT_PREFIX="$USER"
-SPACESHIP_USER_SHOW="always"
-SPACESHIP_HOST_SHOW="true"
-=======
 ZSH_THEME="powerlevel10k/powerlevel10k"
->>>>>>> Nova instalação Linux, alterei tema para PowerLevel10K e ainda vou particionar o .zshrc
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -137,31 +105,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#Aliases
-
-<<<<<<< HEAD
-source /home/hfreitas/.aliases
-
-#Functions
-
-source /home/hfreitas/.functions
-
-#Development Tools paths
-
-source /home/hfreitas/.exports
-
-
-
-# Color scheme of Dracula Theme
-eval `dircolors /home/hfreitas/.dir_colors/dircolors`
-
-
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte-2.91.sh
-fi
-
-autoload bashcompinit && bashcompinit
-=======
 #System Aliases
 
 alias mv="mv -i"
@@ -244,4 +187,3 @@ eval "$(register-python-argcomplete pipx)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
->>>>>>> Nova instalação Linux, alterei tema para PowerLevel10K e ainda vou particionar o .zshrc
