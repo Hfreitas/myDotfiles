@@ -178,7 +178,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 #Pyenv Variables
 export PATH="/home/hfreitas/.pyenv/bin:$PATH"
 
-#Autocompletetion variables
+#Autocompletation variables
 autoload -U compinit && compinit
 autoload -U bashcompinit && bashcompinit
 eval "$(pyenv init -)"
