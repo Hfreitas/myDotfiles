@@ -132,7 +132,6 @@ alias ns='npm start'
 alias nr='npm run'
 alias ni='npm install'
 alias niD='npm install -D'
-alias niS='npm instal --save'
 alias airbnb='exec 3<&1;bash <&3 <(curl https://raw.githubusercontent.com/paulolramos/eslint-prettier-airbnb-react/master/eslint-prettier-config.sh 2> /dev/null)'
 
 #mySQL aliases
