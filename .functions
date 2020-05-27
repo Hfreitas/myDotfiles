@@ -1,0 +1,20 @@
+react() {
+  npx create-react-app "$1" && cd "$1"
+}
+
+gcM() {
+  git commit -m $1 -m $2
+}
+
+auccV() {
+  aucc -V $1 $2 -b1
+}
+
+auccH() {
+  aucc -H $1 $2 -b1
+}
+
+mkcd() {
+  case "$1" in /*) : ;; *) set -- "./$1" ;; esac
+  mkdir -p "$1" && cd "$1"
+}

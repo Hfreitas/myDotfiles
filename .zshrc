@@ -105,80 +105,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#System Aliases
-
-alias mv="mv -i"
-alias cp="cp -i"
-alias install="sudo apt-fast install"
-alias lt="ls -alF"
-alias clr="clear"
-alias tlp="sudo tlp start"
-alias logo="neofetch"
-alias update="sudo apt update"
-alias upgrade="sudo apt upgrade"
-alias nzsh="sudo nano ~/.zshrc"
-alias trybe="cd ~/Documents/projects/trybe"
-alias personal="cd ~/Documents/projects/personal"
-
-#Files associations
-
-alias -s txt=code
-alias -s md=code
-alias -s html=code
-alias -s js=code
-alias -s py=code
-
-#NPM Aliases
-
-alias ns='npm start'
-alias nr='npm run'
-alias ni='npm install'
-
-#React Aliases
-
-alias airbnb='exec 3<&1;bash <&3 <(curl https://raw.githubusercontent.com/Hfreitas/eslint-prettier-airbnb-react/master/eslint-prettier-config.sh 2> /dev/null)'
-alias prop='npm i prop-types'
-alias router='npm i react-router-dom'
-alias redux='npm i redux react-redux'
-alias reactrm='rm -rf public/logo192.png public/logo512.png public/favicon.ico src/logo.svg'
-
-#mySQL aliases
-
-alias mystart='systemctl start mysql'
-alias mystop='systemctl stop mysql'
-alias myacess='mysql - u root -p'
-
-#Docker aliases
-
-alias dstart='sudo systemctl start docker'
-alias dstop='sudo systemctl stop docker'
-
-# Dotfiles manangement alias
-
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+source ~/.aliases
 
 #Functions
 
-react() {
-  npx create-react-app "$1" && cd "$1"
-}
-
-gcM() {
-  git commit -m $1 -m $2
-}
-
-auccV() {
-  aucc -V $1 $2 -b1
-}
-
-auccH() {
-  aucc -H $1 $2 -b1
-}
-
-mkcd() {
-  case "$1" in /*) : ;; *) set -- "./$1" ;; esac
-  mkdir -p "$1" && cd "$1"
-}
+source ~/.functions
 
 #Development Tools paths
 
