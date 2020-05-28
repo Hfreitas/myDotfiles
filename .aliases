@@ -33,9 +33,9 @@ alias nis='npm install --save'
 #React Aliases
 
 alias airbnb='exec 3<&1;bash <&3 <(curl https://raw.githubusercontent.com/Hfreitas/eslint-prettier-airbnb-react/master/eslint-prettier-config.sh 2> /dev/null)'
-alias prop='npm i prop-types'
-alias router='npm i react-router-dom'
-alias redux='npm i redux react-redux'
+alias reactprop='npm i prop-types'
+alias reactrouter='npm i react-router-dom'
+alias reactredux='npm i redux react-redux redux-thunk'
 alias reactrm='rm -rf public/logo192.png public/logo512.png public/favicon.ico src/logo.svg'
 
 #mySQL aliases
