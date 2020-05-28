@@ -105,11 +105,15 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ~/.aliases
+if [ -e $HOME/.aliases ]; then
+    source ~/.aliases
+fi
 
 #Functions
 
-source ~/.functions
+if [ -e $HOME/.functions ]; then
+    source ~/.functions
+fi
 
 #Development Tools paths
 
