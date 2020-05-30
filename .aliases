@@ -49,6 +49,6 @@ alias myacess='mysql - u root -p'
 alias dstart='sudo systemctl start docker'
 alias dstop='sudo systemctl stop docker'
 
-# Dotfiles manangement alias
+# Dotfiles management alias
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
