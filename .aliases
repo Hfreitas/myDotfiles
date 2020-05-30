@@ -32,7 +32,7 @@ alias nis='npm install --save'
 
 #React Aliases
 
-alias airbnb='exec 3<&1;bash <&3 <(curl https://raw.githubusercontent.com/Hfreitas/eslint-prettier-airbnb-react/master/eslint-prettier-config.sh 2> /dev/null)'
+alias airbnb='exec 3<&1;bash <&3 <(curl https://raw.githubusercontent.com/Hfreitas/eslint-prettier-airbnb-react/personal-use/eslint-prettier-config.sh 2> /dev/null)'
 alias reactprop='npm i prop-types'
 alias reactrouter='npm i react-router-dom'
 alias reactredux='npm i redux react-redux redux-thunk'
