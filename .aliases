@@ -42,8 +42,15 @@ alias reactrm='rm -rf public/logo192.png public/logo512.png public/favicon.ico s
 
 alias mystart='systemctl start mysql'
 alias mystop='systemctl stop mysql'
-alias myacess='mysql - u root -p'
+alias myacess='mysql -u root -p'
+alias mystatus='systemctl status mysql'
 
+# MongoDB aliases
+
+alias mongostart='sudo mongod start'
+alias mongostop='sudo mongod stop'
+alias mongorestart='sudo mongod restart'
+alias mongostatus='sudo service mongod status'
 #Docker aliases
 
 alias dstart='sudo systemctl start docker'
