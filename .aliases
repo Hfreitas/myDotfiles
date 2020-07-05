@@ -47,10 +47,11 @@ alias mystatus='systemctl status mysql'
 
 # MongoDB aliases
 
-alias mongostart='sudo mongod start'
-alias mongostop='sudo mongod stop'
-alias mongorestart='sudo mongod restart'
+alias mongostart='sudo service mongod start'
+alias mongostop='sudo service mongod stop'
+alias mongorestart='sudo service mongod restart'
 alias mongostatus='sudo service mongod status'
+
 #Docker aliases
 
 alias dstart='sudo systemctl start docker'
