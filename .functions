@@ -2,6 +2,10 @@ react() {
   npx create-react-app "$1" && cd "$1"
 }
 
+yreact() {
+  yarn create react-app "$1" && cd "$2"
+}
+
 gcM() {
   git commit -m $1 -m $2
 }

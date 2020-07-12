@@ -30,6 +30,12 @@ alias ni='npm install'
 alias nid='npm install -D'
 alias nis='npm install --save'
 
+# yarn aliases
+
+alias ya='yarn add'
+alias yi='yarn install'
+alias yaD='yarn add -D'
+
 #React Aliases
 
 alias airbnb='exec 3<&1;bash <&3 <(curl https://raw.githubusercontent.com/Hfreitas/eslint-prettier-airbnb-react/personal-use/eslint-prettier-config.sh 2> /dev/null)'
@@ -40,8 +46,8 @@ alias reactrm='rm -rf public/logo192.png public/logo512.png public/favicon.ico s
 
 #mySQL aliases
 
-alias mystart='systemctl start mysql'
-alias mystop='systemctl stop mysql'
+alias mystart='sudo systemctl start mysql'
+alias mystop='sudo systemctl stop mysql'
 alias myacess='mysql -u root -p'
 alias mystatus='systemctl status mysql'
 
