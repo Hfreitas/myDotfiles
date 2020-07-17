@@ -13,6 +13,7 @@ alias nzsh="sudo nano ~/.zshrc"
 alias szsh="source ~/.zshrc"
 alias trybe="cd ~/Documents/projects/trybe"
 alias personal="cd ~/Documents/projects/personal"
+alias code='/usr/bin/code-insiders'
 
 #Files associations
 
@@ -49,7 +50,7 @@ alias reactrm='rm -rf public/logo192.png public/logo512.png public/favicon.ico s
 
 alias mystart='sudo systemctl start mysql'
 alias mystop='sudo systemctl stop mysql'
-alias myacess='mysql -u root -p'
+alias myacess='sudo mysql -u root -p'
 alias mystatus='systemctl status mysql'
 
 # MongoDB aliases

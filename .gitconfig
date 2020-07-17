@@ -2,7 +2,7 @@
 	name = Hfreitas
 	email = hfreitas86@gmail.com
 [core]
-	editor = code --wait
+	editor = code-insiders --wait
 [alias]
 #git remote add
 ra = "!git remote add"
