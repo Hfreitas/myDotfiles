@@ -1,0 +1,135 @@
+# My Alacritty config
+
+env:
+  TERM: xterm-256color
+
+window:
+  dimensions:
+    columns: 0
+    lines: 0
+  padding:
+    x: 2
+    y: 2
+  dynamic_padding: false
+  decorations: none
+  startup_mode: Windowed
+  # Allow terminal applications to change Alacritty's window title.
+  dynamic_title: true
+
+scrolling:
+  history: 1000
+
+
+# Colors (Nord)
+colors:
+  # Default colors
+  primary:
+    background: '0x2E3440'
+    foreground: '0xD8DEE9'
+
+  # Normal colors
+  normal:
+    black:   '0x3B4252'
+    red:     '0xBF616A'
+    green:   '0xA3BE8C'
+    yellow:  '0xEBCB8B'
+    blue:    '0x81A1C1'
+    magenta: '0xB48EAD'
+    cyan:    '0x88C0D0'
+    white:   '0xE5E9F0'
+
+  # Bright colors
+  bright:
+    black:   '0x4C566A'
+    red:     '0xBF616A'
+    green:   '0xA3BE8C'
+    yellow:  '0xEBCB8B'
+    blue:    '0x81A1C1'
+    magenta: '0xB48EAD'
+    cyan:    '0x8FBCBB'
+    white:   '0xECEFF4'
+
+  indexed_colors: []
+
+font:
+  normal:
+    # Font family
+    family: "MesloLGL Nerd Font"
+    # The `style` can be specified to pick a specific face.
+    style: Regular
+    # Point size
+    size: 12.0
+    # Line Height
+    offset:
+    x: 0
+    y: 0
+
+    # Glyph locations
+    glyph_offset:
+    x: 0
+    y: 0
+
+#Window Opacity
+background_opacity: 0.90
+# To completely disable the visual bell, set its duration to 0.
+#
+bell:
+  animation: EaseOutExpo
+  color: '0xffffff'
+  duration: 0
+
+key_bindings:
+  # (Windows, Linux, and BSD only)
+  - { key: V, mods: Control|Shift, action: Paste }
+  - { key: C, mods: Control|Shift, action: Copy }
+  - { key: Insert, mods: Shift, action: PasteSelection }
+  - { key: Key0, mods: Control, action: ResetFontSize }
+  - { key: Equals, mods: Control, action: IncreaseFontSize }
+  - { key: Minus, mods: Control, action: DecreaseFontSize }
+
+  - { key: Paste, action: Paste }
+  - { key: Copy, action: Copy }
+  - { key: L, mods: Control, action: ClearLogNotice }
+  - { key: L, mods: Control, chars: "\x0c" }
+  - { key: PageUp, mods: Shift, action: ScrollPageUp, mode: ~Alt }
+  - { key: PageDown, mods: Shift, action: ScrollPageDown, mode: ~Alt }
+  - { key: Home, mods: Shift, action: ScrollToTop, mode: ~Alt }
+  - { key: End, mods: Shift, action: ScrollToBottom, mode: ~Alt }
+
+# Live config reload (changes require restart)
+live_config_reload: true
+
+cursor:
+  # Cursor style
+  #
+  # Values for `style`:
+  #   - ▇ Block
+  #   - _ Underline
+  #   - | Beam
+  style: Block
+  unfocused_hollow: true
+
+mouse:
+  # Click settings
+  #
+  # The `double_click` and `triple_click` settings control the time
+  # alacritty should wait for accepting multiple clicks as one double
+  # or triple click.
+  double_click: { threshold: 300 }
+  triple_click: { threshold: 300 }
+
+      # These are the modifiers that need to be held down for opening URLs when clicking
+    # on them. The available modifiers are documented in the key binding section.
+    # modifiers: Control|Shift
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>"
+
+  # When set to `true`, selected text will be copied to the primary clipboard.
+  save_to_clipboard: false
+
+shell:
+  program: /bin/zsh
+  args:
+    - --login
+

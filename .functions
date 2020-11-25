@@ -1,0 +1,34 @@
+react() {
+  npx create-react-app "$1" && cd "$1"
+}
+
+yreact() {
+  yarn create react-app "$1" && cd "$1"
+}
+
+create-express() {
+  mkcd "$1";
+  yarn init;
+  yarn add express body-parser dotenv cors helmet;
+  yarn add -D nodemon;
+  nodebnb;
+  mkdir -p models services controllers;
+  touch index.js;
+  git init;
+  echo -e "node_modules\n.env\n" >> .gitignore;
+  echo "Express app created!";
+  }
+
+auccV() {
+  aucc -V $1 $2 -b1
+}
+
+auccH() {
+  aucc -H $1 $2 -b1
+}
+
+mkcd() {
+  case "$1" in /*) : ;; *) set -- "./$1" ;; esac
+  mkdir -pv "$1" && cd "$1"
+}
+

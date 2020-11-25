@@ -1,0 +1,87 @@
+#System Aliases
+
+alias mv="mv -i"
+alias cp="cp -i"
+alias install="sudo apt-fast install"
+alias ls="ls --color=auto"
+alias lt="ls -aCF"
+alias clr="clear"
+alias tlp="sudo tlp start"
+alias logo="neofetch"
+alias update="sudo apt update"
+alias upgrade="sudo apt upgrade"
+alias autoclean="sudo apt autoclean"
+alias autoremove="sudo apt autoremove"
+alias nzsh="sudo nano ~/.zshrc"
+alias szsh="source ~/.zshrc"
+alias trybe="cd ~/Documents/projects/trybe"
+alias personal="cd ~/Documents/projects/personal"
+alias tr='tmux source-file ~/.tmux.conf'
+alias grep='grep --color=auto'
+
+#Files associations
+
+alias -s txt=code
+alias -s md=code
+alias -s html=code
+alias -s js=code
+alias -s py=code
+
+# Project Config Aliases
+
+alias nodebnb='exec 3<&1;bash <&3 <(curl https://raw.githubusercontent.com/Hfreitas/eslint-prettier-airbnb-node/master/eslint-prettier-airbnb-node.sh 2> /dev/null)'
+alias airbnb='exec 3<&1;bash <&3 <(curl https://raw.githubusercontent.com/Hfreitas/eslint-prettier-airbnb-react/personal-use/eslint-prettier-config.sh 2> /dev/null)'
+
+
+#NPM Aliases
+
+alias ns='npm start'
+
+# yarn aliases
+
+alias ys='yarn start'
+
+# React yarn aliases
+alias yprop='yarn add prop-types'
+alias yrouter='yarn add react-router-dom'
+alias yredux='yarn add redux react-redux redux-thunk'
+
+#React aliases
+
+alias reactprop='npm i prop-types'
+alias reactrouter='npm i react-router-dom'
+alias reactredux='npm i redux react-redux redux-thunk'
+alias reactrm='rm -rf public/logo192.png public/logo512.png public/favicon.ico src/logo.svg'
+
+#mySQL aliases
+
+alias mystart='sudo systemctl start mysql'
+alias mystop='sudo systemctl stop mysql'
+alias myacess='mysql -u root -p'
+alias mystatus='systemctl status mysql'
+
+# MongoDB aliases
+
+alias mongostart='sudo service mongod start'
+alias mongostop='sudo service mongod stop'
+alias mongorestart='sudo service mongod restart'
+alias mongostatus='sudo service mongod status'
+
+#Docker aliases
+
+alias dstart='sudo systemctl start docker'
+alias dstop='sudo systemctl stop docker'
+alias dstatus='sudo systemctl status docker'
+alias dcompose='docker-compose'
+alias dcomposeup='docker-compose up --build'
+alias dcomposedown='docker-compose down'
+
+#PM2 aliases
+alias pmstart='sudo systemctl start pm2-hfreitas.service'
+alias pmstop='sudo systemctl stop pm2-hfreitas.service'
+alias pmstatus='sudo systemctl status pm2-hfreitas.service'
+
+# Dotfiles management alias
+
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
