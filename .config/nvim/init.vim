@@ -38,6 +38,8 @@ set fileencoding=utf-8
 syntax enable
 filetype plugin on
 filetype indent on
+set autoindent
+set smartindent
 
 " UI
 set background=dark
