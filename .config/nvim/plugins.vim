@@ -23,6 +23,7 @@ Plug 'alvan/vim-closetag'
 " Enable git changes to be shown in sign column
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 " Brackets colorize and lua colorizer
 Plug 'norcalli/nvim-colorizer.lua'
@@ -35,6 +36,25 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 " Icons
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+" Status Bar
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" Syntax check plugin
+Plug 'vim-syntastic/syntastic'
+" File search
+Plug 'ctrlpvim/ctrlp.vim'
+" Python plugins
+Plug 'nvie/vim-flake8'
+
+" Javascript/Typescript/React plugins
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'jparise/vim-graphql'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 call plug#end()
 
 if plug_install
