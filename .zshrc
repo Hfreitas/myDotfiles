@@ -1,3 +1,7 @@
+if [ -e $HOME/.p10k ]; then
+  source ~/.p10k
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -8,7 +12,8 @@ export ZSH="/home/hfreitas/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -42,7 +47,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
- ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -68,7 +73,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git gitfast zsh-autosuggestions zsh-completions nvm zsh-syntax-highlighting) 
+plugins=(asdf git gitfast docker docker-compose zsh-autosuggestions zsh-completions nvm zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,13 +104,13 @@ export LANG=en_US.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 if [ -e $HOME/.aliases ]; then
-    source ~/.aliases
+  source ~/.aliases
 fi
 
 #Functions
 
 if [ -e $HOME/.functions ]; then
-    source ~/.functions
+  source ~/.functions
 fi
 
 #Development Tools paths
@@ -126,4 +131,7 @@ fi
 #ASDF Variables
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
+. $HOME/.asdf/plugins/java/set-java-home.zsh
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
