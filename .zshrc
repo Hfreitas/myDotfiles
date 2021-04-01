@@ -1,10 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-#fzf configs
-export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border --ansi'
-export FZF_DEFAULT_COMMAND='fd --type file --follow --hidden --exclude .git --color=always'
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+if [ -e $HOME/.config/zsh/plugins.zsh ]; then
+  source $HOME/.config/zsh/plugins.zsh
+fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/hfreitas/.oh-my-zsh"
@@ -75,7 +74,7 @@ ZSH_THEME="gentoo"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(asdf fzf git gitfast dotbare docker docker-compose)
+plugins=(asdf git gitfast dotbare docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -96,9 +95,6 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -108,25 +104,27 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [ -e $HOME/.aliases ]; then
-  source ~/.config/zsh/.aliases
+if [ -e $HOME/.config/zsh/aliases.zsh ]; then
+  source $HOME/.config/zsh/aliases.zsh
 fi
 
 #Functions
 
-if [ -e $HOME/.functions ]; then
-  source ~/.config/zsh/.functions
+if [ -e $HOME/.config/zsh/functions.zsh ]; then
+  source $HOME/.config/zsh/functions.zsh
 fi
 
-#ASDF configs
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/plugins/java/set-java-home.zsh
+if [ -e $HOME/.config/zsh/main.zsh ]; then
+  source $HOME/.config/zsh/main.zsh
+fi
 
-# append completions to fpath
-fpath=(${ASDF_DIR}/completions $fpath)
-# initialise completions with ZSH's compinit
-autoload -Uz compinit
-compinit
+if [ -e $HOME/.config/zsh/completions.zsh ]; then
+  source $HOME/.config/zsh/completions.zsh
+fi
+
+if [ -e $HOME/.config/zsh/history.zsh ]; then
+  source $HOME/.config/zsh/history.zsh
+fi
 
 # ripgreg config file path
 export RIPGREP_CONFIG_PATH="$HOME/.config/.ripgreprc"
