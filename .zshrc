@@ -126,5 +126,6 @@ if [ -e $HOME/.config/zsh/history.zsh ]; then
   source $HOME/.config/zsh/history.zsh
 fi
 
-# ripgreg config file path
-export RIPGREP_CONFIG_PATH="$HOME/.config/.ripgreprc"
+if [ -e $HOME/.config/zsh/variables.zsh ]; then
+  source $HOME/.config/zsh/variables.zsh
+fi

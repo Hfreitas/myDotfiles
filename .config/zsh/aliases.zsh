@@ -13,6 +13,7 @@ alias autoremove="sudo pacman -Qtdq | sudo pacman -Rns -"
 alias nzsh="sudo nano ~/.zshrc"
 alias szsh="source ~/.zshrc"
 alias grep='grep --color=auto'
+alias projects='cd $PROJECTS_FOLDER'
 
 #Docker aliases
 

@@ -1,14 +1,7 @@
 {
-  "languageserver": {
-    "dockerfile": {
-      "command": "docker-langserver",
-      "filetypes": ["dockerfile"],
-      "args": ["--stdio"]
-    }
-  },
-  "coc.preferences.extensionUpdateCheck": "daily",
-  "coc.preferences.diagnostic.displayByAle": true,
-  "coc.preferences.diagnostic.checkCurrentLine": true,
+  "suggest.autoTrigger": "trigger",
+  "diagnostic.displayByAle": true,
+  "diagnostic.checkCurrentLine": true,
   "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": true,
   "coc.preferences.formatOnSaveFiletypes": [
@@ -29,13 +22,6 @@
   "eslint.alwaysShowStatus": true,
   "eslint.packageManager": "yarn",
   "eslint.format.enable": true,
-  "eslint.filetypes": [
-    "javascript",
-    "typescript",
-    "typescriptreact",
-    "javascriptreact",
-    "json"
-  ],
   "suggest.noselect": false,
   "snippets.extends": {
     "javascriptreact": ["javascript"],
@@ -46,7 +32,7 @@
   "tailwindCSS.headwind.runOnSave": true,
   "tailwindCSS.headwind.removeDuplicates": true,
   "css.lint.compatibleVendorPrefixes": "warning",
-  "css.lint.vendorPrefixes": "warning",
+  "css.lint.vendorPrefix": "warning",
   "css.lint.duplicateProperties": "warning",
   "css.lint.emptyRules": "warning",
   "css.lint.unknownVendorSpecificProperties": "warning",

@@ -13,7 +13,7 @@ promptinit
 
 setopt correctall
 setopt autocd
-setopt  autopushd 
+setopt  autopushd
 setopt  pushdminus
 setopt  pushdsilent
 setopt  pushdtohome
@@ -22,3 +22,4 @@ setopt  cdablevars
 setopt extendedglob
 
 DIRSTACKSIZE=5
+
