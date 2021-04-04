@@ -1,5 +1,4 @@
 zmodload zsh/complist
-setopt extendedglob
 setopt COMPLETE_ALIASES
 
 ## completion system

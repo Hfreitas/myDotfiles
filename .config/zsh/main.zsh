@@ -1,4 +1,3 @@
-#ASDF configs
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/plugins/java/set-java-home.zsh
 
@@ -14,3 +13,12 @@ promptinit
 
 setopt correctall
 setopt autocd
+setopt  autopushd 
+setopt  pushdminus
+setopt  pushdsilent
+setopt  pushdtohome
+setopt  cdablevars
+
+setopt extendedglob
+
+DIRSTACKSIZE=5

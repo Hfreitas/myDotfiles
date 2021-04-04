@@ -1,6 +1,6 @@
-HISTFILE=$HOME/.histfile
-HISTSIZE=10000
-SAVEHIST=10000
+HISTFILE=$HOME/.zhistory
+HISTSIZE=4096
+SAVEHIST=4096
 
 # Ignore duplicate entries in history and share history among all zsh sessions
 setopt APPEND_HISTORY
