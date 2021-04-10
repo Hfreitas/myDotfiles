@@ -1,0 +1,95 @@
+add_newline = true
+
+scan_timeout = 15
+
+format = """
+$username\
+$hostname\
+$memory_usage\
+$shlvl\
+$kubernetes\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$docker_context\
+$elixir\
+$erlang\
+$golang\
+$java\
+$nodejs\
+$python\
+$nix_shell\
+$aws\
+$env_var\
+$custom\
+$package\
+$cmd_duration\
+$line_break\
+$jobs\
+$battery\
+$terraform\
+$time\
+$status\
+$shell\
+$character"""
+
+[character]
+success_symbol = "[➜](bold green) "
+error_symbol = "[✗](bold red) "
+
+[[battery.display]]
+threshold = 30
+style = "bold yellow"
+
+[[battery.display]]
+threshold = 15
+style = "bold red"
+
+[docker_context]
+format = "via [🐋 $context](blue bold)"
+
+[golang]
+format = "via [🏎💨 $version](bold cyan) "
+
+[hostname]
+ssh_only = false
+format =  "on [$hostname](bold fg:75) "
+disabled = false
+
+[jobs]
+symbol = "+ "
+threshold = 4
+
+[memory_usage]
+disabled = false
+threshold = 75
+symbol = " "
+style = "bold dimmed green"
+
+[nix_shell]
+disabled = true
+impure_msg = "[impure shell](bold red)"
+pure_msg = "[pure shell](bold green)"
+format = 'via [☃️ $state( \($name\))](bold blue) '
+
+[package]
+format = "via [🎁 $version](208 bold) "
+
+[status]
+style = "bg:blue"
+format = '[\[$symbol $common_meaning$signal_name$maybe_int\]]($style) '
+map_symbol = true
+disabled = false
+
+[username]
+style_user = "bold fg:159"
+style_root = "red bold"
+format = "[$user]($style) "
+disabled = false
+show_always = true
+
+[terraform]
+format = "[🏎💨 $version$workspace]($style) "
+
