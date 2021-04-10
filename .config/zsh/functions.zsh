@@ -20,5 +20,31 @@ yay-uninstall() {
 }
 
 fcd() {
-  cd $(fd --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | fzf)
+  cd $(fd --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | fzf --preview 'bat --color=always --style=numbers --line-range=:500 {}')
+}
+
+gdiff() {
+  # Verifica se o diretório é um repositório git
+  if ! git rev-parse --git-dir > /dev/null 2>&1; then
+    echo "Error: Not inside a git repository."
+  else
+    if ! command -v fzf &>/dev/null; then
+      echo "Error: FZF not installed."
+    else
+      if ! command -v bat &>/dev/null; then
+        preview="git diff $@ --color=always -- {-1}"
+      else
+        preview="git diff $@ --name-only --diff-filter=d | xargs bat --diff"
+      fi
+
+      if ! [ -d .git ]; then
+        root=$(git rev-parse --git-dir | sed 's/.git//')
+        pushd $root >/dev/null
+        git diff $@ --name-only | fzf -m --ansi --preview $preview
+        popd >/dev/null
+      else
+        git diff $@ --name-only | fzf -m --ansi --preview $preview
+      fi
+    fi
+  fi
 }
