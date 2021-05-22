@@ -1,5 +1,5 @@
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/plugins/java/set-java-home.zsh
+. ${HOME}/.asdf/asdf.sh
+. ${HOME}/.asdf/plugins/java/set-java-home.zsh
 
 # append completions to fpath
 fpath=(${ASDF_DIR}/completions $fpath)

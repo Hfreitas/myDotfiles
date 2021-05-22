@@ -74,7 +74,7 @@ export ZSH="/home/hfreitas/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git gitfast dotbare docker docker-compose)
+plugins=(git gitfast dotbare docker docker-compose git-flow-completion)
 
 source $ZSH/oh-my-zsh.sh
 

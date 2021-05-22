@@ -1,11 +1,11 @@
-export PROJECTS_FOLDER="/home/hfreitas/Documents/projects"
+export PROJECTS_FOLDER="${HOME}/Documents/projects"
 
-export VIMCONFIG="/home/hfreitas/.config/nvim"
+export VIMCONFIG="${HOME}/.config/nvim"
 
 # ripgreg config file path
-export RIPGREP_CONFIG_PATH="/home/hfreitas/.config/.ripgreprc"
+export RIPGREP_CONFIG_PATH="${HOME}/.config/.ripgreprc"
 
-export STARSHIP_CONFIG="/home/hfreitas/.config/starship/starship.toml"
+export STARSHIP_CONFIG="${HOME}/.config/starship/starship.toml"
 
-export STARSHIP_CACHE="/home/hfreitas/.config/starship/cache"
+export STARSHIP_CACHE="${HOME}/.config/starship/cache"
 

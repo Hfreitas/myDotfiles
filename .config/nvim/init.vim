@@ -89,6 +89,7 @@ set smartcase
 " Misc
 set autowrite
 set autoread
+set confirm
 set history=100
 set foldenable
 set foldlevelstart=20
@@ -526,8 +527,8 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <leader>rn <Plug>(coc-rename)
 
 " Formatting selected code.
-xmap <leader>i  <Plug>(coc-format-selected)
-nmap <leader>i  <Plug>(coc-format-selected)
+xmap <leader>if  <Plug>(coc-format-selected)
+nmap <leader>if  <Plug>(coc-format-selected)
 
 augroup formatgroup
   autocmd!

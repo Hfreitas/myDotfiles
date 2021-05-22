@@ -1,9 +1,10 @@
 auccV() {
-  aucc -V $1 $2 -b1
+  # https://stackoverflow.com/questions/57099551/how-to-use-asdf-as-root-user
+  sudo -E `asdf which aucc` -V $1 $2 -b1
 }
 
 auccH() {
-  aucc -H $1 $2 -b1
+  sudo -E `asdf which aucc` -H $1 $2 -b1
 }
 
 mkcd() {
