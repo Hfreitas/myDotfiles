@@ -47,3 +47,5 @@ bdel = "!git branch -D"
 b = "!git branch --color[=auto]"
 [fetch]
 	prune = true
+[init]
+	defaultBranch = main
