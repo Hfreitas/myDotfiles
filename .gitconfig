@@ -49,3 +49,5 @@ b = "!git branch --color[=auto]"
 	prune = true
 [init]
 	defaultBranch = main
+[pull]
+	rebase = true

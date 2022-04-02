@@ -1,5 +1,4 @@
 . ${HOME}/.asdf/asdf.sh
-. ${HOME}/.asdf/plugins/java/set-java-home.zsh
 
 # append completions to fpath
 fpath=(${ASDF_DIR}/completions $fpath)
@@ -39,4 +38,10 @@ fi
 
 if [ -e $HOME/.config/zsh/variables.zsh ]; then
   source $HOME/.config/zsh/variables.zsh
+fi
+
+# tabtab source for packages
+# uninstall by removing these lines
+if [ -e $HOME/.config/zsh/__tabtab.zsh ]; then
+  source $HOME/.config/zsh/__tabtab.zsh
 fi

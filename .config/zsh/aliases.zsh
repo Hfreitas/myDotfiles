@@ -1,5 +1,6 @@
 #System Aliases
 
+alias mkdir="mkdir -pv"
 alias mv="mv -i"
 alias cp="cp -i"
 alias ls="lsd -alF"
