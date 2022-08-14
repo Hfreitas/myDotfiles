@@ -26,7 +26,7 @@ else
   git commit -m "${commitMessage}"
 fi
 echo
-read -p $"\033[1;34mPush local updates to dotfiles repo?[y/n]\033[0m " -n 1 -r response
+read -p $'\033[1;34mPush local updates to dotfiles repo?[y/n]\033[0m ' -n 1 -r response
 echo
 if [[ ! $response =~ ^[Yy]$ ]]; then
   echo -e "${BLUE}Leaving local updates unstaged and exit...${NC}"
