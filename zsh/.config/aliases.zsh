@@ -15,6 +15,7 @@ alias projects='cd $PROJECTS_FOLDER'
 alias personal='cd $PROJECTS_FOLDER/personal'
 alias work='cd $PROJECTS_FOLDER/work'
 alias cat='bat'
+alias pip="python -m pip"
 
 #Docker aliases
 
