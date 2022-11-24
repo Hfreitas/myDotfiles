@@ -1,0 +1,21 @@
+alias mkdir="mkdir -pv"
+alias mv="mv -i"
+alias cp="cp -i"
+alias ls="lsd -alF"
+alias lt="lsd --tree"
+alias logo="neofetch"
+alias upgrade="sudo apt update && sudo apt upgrade && sudo apt clean && sudo apt autoremove"
+alias nzsh="sudo nano ~/.zshrc"
+alias szsh="source ~/.zshrc"
+alias projects='cd $PROJECTS_FOLDER'
+alias personal='cd $PROJECTS_FOLDER/personal'
+alias work='cd $PROJECTS_FOLDER/work'
+alias cat='batcat'
+alias pip="python -m pip"
+
+alias dstart='sudo systemctl start docker && sudo systemctl start containerd'
+alias dstop='sudo systemctl stop docker && sudo systemctl stop containerd'
+alias dstatus='sudo systemctl status docker'
+alias dcompose='docker-compose'
+alias dcomposeup='docker-compose up --build'
+alias dcomposedown='docker-compose down'
