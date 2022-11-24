@@ -2,7 +2,7 @@
 name = Hfreitas
 email = hfreitas86@gmail.com
 [core]
-editor = "code"
+editor = "code --wait"
 [color]
 ui = true
 [color "branch"]

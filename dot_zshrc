@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # init config
-if [ -f $HOME/.dotfiles/zsh/.config/main.zsh ]; then
+if [ -f $HOME/.config/zsh/main.zsh ]; then
     source $HOME/.config/zsh/main.zsh
 fi
 
