@@ -32,3 +32,6 @@ source /usr/share/doc/fzf/examples/completion.zsh
 
 eval "$(starship init zsh)"
 
+eval "$(mise activate zsh)"
+
+eval "$(direnv hook zsh)"
