@@ -10,7 +10,7 @@ alias nzsh="sudo nano ~/.zshrc"
 alias szsh="source ~/.zshrc"
 alias projects='cd $PROJECTS_FOLDER'
 alias fd="fdfind"
-
+alias upgrade="sudo apt update && sudo apt upgrade && sudo apt autoremove && sudo apt  autoclean && sudo apt clean"
 #Docker aliases
 
 alias dstart='sudo systemctl start docker && sudo systemctl start containerd'
